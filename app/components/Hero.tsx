@@ -1,17 +1,18 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import { FaGithub, FaLinkedin, FaFilePdf, FaInstagram } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaFilePdf, FaInstagram, FaUserAlt, FaCode } from "react-icons/fa";
 import { MdOutlineMail } from "react-icons/md";
-import gif from "./gif.gif"
+import gif from "./gif.gif";
+import { IoMdHome } from "react-icons/io";
 
 const Hero = () => {
   return (
     <div className='h-screen pb-10 flex justify-center items-center bg-green-50 relative'>
-      <div className="md:block hidden">
-        <p className="p-6">Home</p>
-        <p className="p-6">About</p>
-        <p className="p-6">Project</p>
-        <p className="p-6">Contact</p>
+      <div className="md:block hidden z-10 text-3xl">
+        <div className='py-6 px-2'><IoMdHome/></div>
+        <div className="py-6 px-2"><FaUserAlt/></div>
+        <div className="py-6 px-2"><FaCode /></div>
+        <div className="py-6 px-2"><MdOutlineMail /></div>
       </div>
       <div className="h-auto w-full flex justify-center items-center z-10">
         <div className="flex flex-col">
@@ -22,17 +23,17 @@ const Hero = () => {
             <FaGithub className="p-1 text-5xl "/>
             <FaLinkedin className="p-1 text-5xl "/>
             <FaFilePdf className="p-1 text-5xl "/>
-            < MdOutlineMail className="p-1 text-5xl "/>
-            < FaInstagram className="p-1 text-5xl "/>
+            <MdOutlineMail className="p-1 text-5xl "/>
+            <FaInstagram className="p-1 text-5xl "/>
           </div>
         </div>
       </div>
       <div className="md:block hidden z-10">
-            <FaGithub className="p-2 text-5xl "/>
-            <FaLinkedin className="p-2 text-5xl "/>
-            <FaFilePdf className="p-2 text-5xl "/>
-            < MdOutlineMail className="p-2 text-5xl "/>
-            < FaInstagram className="p-2 text-5xl "/>
+        <FaGithub className="p-2 text-5xl "/>
+        <FaLinkedin className="p-2 text-5xl "/>
+        <FaFilePdf className="p-2 text-5xl "/>
+        <MdOutlineMail className="p-2 text-5xl "/>
+        <FaInstagram className="p-2 text-5xl "/>
       </div>
       <div className='absolute bottom-0 right-0 mr-0 mb-0'>
         <Image src={gif} alt="myphoto" objectFit="cover" className='h-4/5 w-auto md:w-full md:h-auto'/>
@@ -42,3 +43,4 @@ const Hero = () => {
 }
 
 export default Hero;
+

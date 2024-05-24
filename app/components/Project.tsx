@@ -21,8 +21,7 @@ const Project = () => {
   ];
   const [category, setCategory] = useState('all');
 
-  const handleCategoryChange = (newCategory: any) => {
-    
+  const handleCategoryChange = (newCategory: string) => {
     setCategory(newCategory);
   }
 
