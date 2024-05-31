@@ -3,11 +3,12 @@ import Link from 'next/link';
 import { FaGithub, FaLinkedin, FaFilePdf, FaInstagram, FaUserAlt, FaCode } from "react-icons/fa";
 import { MdOutlineMail } from "react-icons/md";
 import gif from "./gif.gif";
+import bgimg from './background.png'
 import { IoMdHome } from "react-icons/io";
 
 const Hero = () => {
   return (
-    <div className='h-screen pb-10 flex justify-center items-center bg-green-50 relative'>
+    <div className='h-screen bg-cover pb-10 flex justify-center items-center relative bg-green-50'>
       <div className="md:block hidden z-10 text-3xl">
         <div className='py-6 px-2'><IoMdHome/></div>
         <div className="py-6 px-2"><FaUserAlt/></div>
@@ -16,7 +17,7 @@ const Hero = () => {
       </div>
       <div className="h-auto w-full flex justify-center items-center z-10">
         <div className="flex flex-col">
-          <h2 className='text-3xl'>Hi! I'm</h2>
+          <h2 className='text-3xl'>Hi! I&apos;m</h2>
           <h1 className='text-5xl md:text-7xl font-bold py-6'>Yuta Hamasaki</h1>
           <h3 className='text-4xl'>Software developer</h3>
           <div className="flex flex-row md:hidden z-10 mt-6">

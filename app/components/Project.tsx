@@ -2,6 +2,7 @@
 import Logo from './Spreaky.png';
 import Zen from './Zen.jpg'
 import ProjectCard from './ProjectCard';
+import bgimg from './background.png'
 import { useState } from "react";
 
 interface Project {
