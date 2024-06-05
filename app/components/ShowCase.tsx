@@ -24,8 +24,8 @@ const ShowCase: React.FC<ShowCaseProps> = ({ imagePath, title, description, link
       </div>
       <p>{description}</p>
       <div className="m-3">
-      {stacks.map((stack) => (
-          <span className="border border-green-500 rounded p-2 text-sm font-semibold text-gray-700 mr-1">
+      {stacks.map((stack, index) => (
+          <span key={index} className="border border-green-500 rounded p-2 text-sm font-semibold text-gray-700 mr-1">
             {stack}
           </span>
         ))}
