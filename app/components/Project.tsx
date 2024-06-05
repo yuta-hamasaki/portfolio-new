@@ -13,12 +13,13 @@ interface Project {
   imageSrc: any;
   imageAlt: string;
   detail: string;
+  stacks: string;
 }
 
 const Project = () => {
   const projects = [
-    { category: "personal", title: "Spreaky", imageSrc: Logo, link: "https://spreaky.com", imageAlt: "spreaky",description: "This is a web service for english speaking test. I made it with React, Firebase, OpenAi API", detail: "/detail/spreaky"},
-    { category: "company", title: "Zen eats", description: "This is website to find vegetarian food restaurants in Japan", link: "https://yuta-hamasaki.vercel.app", imageSrc: Zen, imageAlt: "zen-eats", detail: "/" },
+    { category: "personal", title: "Spreaky", imageSrc: Logo, link: "https://spreaky.com", imageAlt: "spreaky",description: "This is a web service for english speaking test. I made it with React, Firebase, OpenAI API, and Stripe API", detail: "/spreaky", stacks: ["React", "Firebase","Stripe API", "OpenAI API"]},
+    { category: "company", title: "Zen eats", description: "This is website to find vegetarian food restaurants in Japan", link: "https://yuta-hamasaki.vercel.app", imageSrc: Zen, imageAlt: "zen-eats", detail: "/", stacks: ["Node.js(Express)", "Ejs", "MongoDB" ]},
   ];
   const [category, setCategory] = useState('all');
 
@@ -54,6 +55,7 @@ const Project = () => {
                   detail={project.detail}
                   imageSrc={project.imageSrc}
                   imageAlt={project.imageAlt}
+                  stacks={project.stacks}
                 />
               );
             }

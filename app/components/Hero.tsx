@@ -25,7 +25,7 @@ const Hero = () => {
           <motion.div
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
-            transition={{ ease: "easeIn", duration: 3 }} 
+            transition={{ ease: "easeIn", duration: 2 }} 
             className="flex flex-row md:hidden z-10 mt-6">
             <FaGithub className="p-1 text-5xl "/>
             <FaLinkedin className="p-1 text-5xl "/>
@@ -39,7 +39,7 @@ const Hero = () => {
       <motion.div
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
-        transition={{ ease: "easeIn", duration: 3 }} 
+        transition={{ ease: "easeIn", duration: 2 }} 
         className='absolute bottom-0 right-0 mr-0 mb-0'>
       <Image src={gif} alt="myphoto" objectFit="cover" className='h-4/5 w-auto md:w-full md:h-auto'/>
       </motion.div>
