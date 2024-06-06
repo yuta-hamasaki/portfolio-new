@@ -33,8 +33,8 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
       <p className="rounded-full border border-sky-100 bg-sky-50 px-2 py-0.5 text-sky-300 bg-sky-500/10 w-fit">{category}</p>
       <h2 className="text-xl font-semibold text-gray-800 mb-2">{title}</h2>
       <div className="m-2">
-        {stacks.map((stack) => (
-          <span className="p-1 mr-1 text-sm font-semibold text-gray-700 border border-green-500 rounded">
+        {stacks.map((stack, index) => (
+          <span key={index} className="p-1 mr-1 text-sm font-semibold text-gray-700 border border-green-500 rounded">
             {stack}
           </span>
         ))}
