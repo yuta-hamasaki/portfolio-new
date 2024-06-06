@@ -1,8 +1,7 @@
 "use client"; 
 import Logo from './Spreaky.png';
-import Zen from './Zen.jpg'
+import Zen from './Zen.jpg';
 import ProjectCard from './ProjectCard';
-import bgimg from './background.png'
 import { useState } from "react";
 
 interface Project {
@@ -13,13 +12,13 @@ interface Project {
   imageSrc: any;
   imageAlt: string;
   detail: string;
-  stacks: string;
+  stacks: string[];
 }
 
 const Project = () => {
   const projects = [
-    { category: "personal", title: "Spreaky", imageSrc: Logo, link: "https://spreaky.com", imageAlt: "spreaky",description: "This is a web service for english speaking test. I made it with React, Firebase, OpenAI API, and Stripe API", detail: "/spreaky", stacks: ["React", "Firebase","Stripe API", "OpenAI API"]},
-    { category: "company", title: "Zen eats", description: "This is website to find vegetarian food restaurants in Japan", link: "https://yuta-hamasaki.vercel.app", imageSrc: Zen, imageAlt: "zen-eats", detail: "/", stacks: ["Node.js(Express)", "Ejs", "MongoDB" ]},
+    { category: "personal", title: "Spreaky", imageSrc: Logo, link: "https://spreaky.com", imageAlt: "spreaky", description: "This is a web service for English speaking test. I made it with React, Firebase, OpenAI API, and Stripe API", detail: "/spreaky", stacks: ["React", "Firebase", "Stripe API", "OpenAI API"] },
+    { category: "company", title: "Zen eats", description: "This is a website to find vegetarian food restaurants in Japan. I made it with Node.js(Express), Ejs, and MongoDB", link: "https://yuta-hamasaki.vercel.app", imageSrc: Zen, imageAlt: "zen-eats", detail: "/", stacks: ["Node.js (Express)", "Ejs", "MongoDB"] },
   ];
   const [category, setCategory] = useState('all');
 
@@ -42,7 +41,7 @@ const Project = () => {
             Company
           </button>
         </div>
-        <div className="flex flex-wrap justify-center items-center">
+        <div className="flex flex-wrap items-center justify-center">
           {projects.map((project, index) => {
             if (category === 'all' || project.category === category) {
               return (
