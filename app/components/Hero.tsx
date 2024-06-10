@@ -7,12 +7,12 @@ import { FaGithub, FaLinkedin, FaFilePdf, FaInstagram} from "react-icons/fa";
 import { HiOutlineChevronDoubleUp } from "react-icons/hi"
 import { MdOutlineMail } from "react-icons/md";
 import gif from "./gif.gif";
-
 import { motion } from "framer-motion";
-
+import bg from "./bg.png"
+1
 const Hero = () => {
   return (
-    <div className='h-screen bg-cover pb-10 flex justify-center items-center relative bg-green-50' >
+    <div className='h-screen bg-center pb-10 flex justify-center items-center relative' style={{ backgroundImage: `url(${bg.src})` }}>
       <LeftBar />
       <div className="h-auto w-full flex justify-center items-center z-10">
         <div
