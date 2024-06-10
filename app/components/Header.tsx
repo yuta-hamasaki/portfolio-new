@@ -42,13 +42,18 @@ export default function Header() {
       </div>
 
       {isOpen && (
-        <div className="md:hidden absolute top-16 left-0 w-full bg-white shadow-md py-2">
+        <motion.div
+        initial={{y:-20, opacity: 0 }}
+        whileInView={{y:0, opacity: 1}}
+        transition={{type: "spring",
+        duration: 0.4}}
+        className="md:hidden absolute top-16 left-0 w-full bg-white shadow-md py-2">
           <div className="flex flex-col items-center">
             <Link href="/about"><p className="py-2">About</p></Link>
             <Link href="/skills"><p className="py-2">Skills</p></Link>
             <Link href="#projects"><p className="py-2">Projects</p></Link>
           </div>
-        </div>
+        </motion.div>
       )}
     </motion.header>
   );

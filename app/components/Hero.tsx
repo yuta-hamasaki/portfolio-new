@@ -15,20 +15,32 @@ const Hero = () => {
     <div className='h-screen bg-cover pb-10 flex justify-center items-center relative bg-green-50' >
       <LeftBar />
       <div className="h-auto w-full flex justify-center items-center z-10">
-        <motion.div
+        <div
+        className="flex flex-col"
+        >
+          <motion.h2
+          initial={{y:-30, opacity: 0 }}
+          whileInView={{y:0, opacity: 1}}
+          transition={{type: "spring",
+          duration: 0.5}}
+          className='text-3xl'>Hi! I&apos;m</motion.h2>
+          <motion.h1
           initial={{y:-30, opacity: 0 }}
           whileInView={{y:0, opacity: 1}}
           transition={{type: "spring",
           duration: 2}}
-          className="flex flex-col"
-        >
-          <h2 className='text-3xl'>Hi! I&apos;m</h2>
-          <h1 className='text-5xl md:text-7xl font-bold py-6'>Yuta Hamasaki</h1>
-          <h3 className='text-4xl'>Software developer</h3>
+          className='text-5xl md:text-7xl font-bold py-6'> <span className='text-green-500'>Yuta </span>Hamasaki</motion.h1>
+          <motion.h3
+          initial={{y:-30, opacity: 0 }}
+          whileInView={{y:0, opacity: 1}}
+          transition={{type: "spring",
+          duration: 2}}
+          className='text-4xl'>Software developer</motion.h3>
           <motion.div
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            transition={{ ease: "easeIn", duration: 0.5 }}
+          initial={{y:-30, opacity: 0 }}
+          whileInView={{y:0, opacity: 1}}
+          transition={{type: "spring",
+          duration: 2}}
             className="flex flex-row md:hidden z-10 mt-6"
           >
             <Link href="https://github.com/your-github">
@@ -47,7 +59,7 @@ const Hero = () => {
               <FaInstagram className="p-1 text-5xl cursor-pointer" />
             </Link>
           </motion.div>
-        </motion.div>
+        </div>
       </div>
       <RightBar />
       <motion.div

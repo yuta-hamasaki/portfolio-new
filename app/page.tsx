@@ -6,6 +6,7 @@ import { useState, useEffect } from "react"
 import Contact from "./components/Contact"
 
 
+
 export default function Home() {
   const [header, setHeader] = useState(false)
 

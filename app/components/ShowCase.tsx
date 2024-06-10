@@ -15,14 +15,14 @@ interface ShowCaseProps {
 
 const ShowCase: React.FC<ShowCaseProps> = ({ imagePath, title, description, link, videoLink , gitLink, stacks}) => {
   return (
-    <div className='flex items-center flex-col mt-8'>
+    <div className='flex items-center flex-col  mx-11'>
       <div className='w-full h-64 relative'>
-        <Image src={imagePath} alt={title} layout="fill" objectFit="cover" className='px-7'/>
+        <Image src={imagePath} alt={title} layout="fill" objectFit="cover" />
       </div>
       <div className="m-5">
         <h2 className='font-bold text-3xl'>{title}</h2>
       </div>
-      <p className='px-8'>{description}</p>
+      <p>{description}</p>
       <div className="m-3">
       {stacks.map((stack, index) => (
           <span key={index} className="border border-green-500 rounded p-2 text-sm font-semibold text-gray-700 mr-1">
