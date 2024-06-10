@@ -6,14 +6,15 @@ import {motion} from "framer-motion"
 const LeftBar = () => {
   return (
   <motion.div
-    initial={{ opacity: 0 }}
-    whileInView={{ opacity: 1 }}
-    transition={{ ease: "easeIn", duration: 3 }} 
-  className="md:block hidden z-10 text-3xl">
-    <div className='py-6 px-2'><IoMdHome/></div>
-    <div className="py-6 px-2"><FaUserAlt/></div>
-    <div className="py-6 px-2"><FaCode /></div>
-    <div className="py-6 px-2"><MdOutlineMail /></div>
+  initial={{x:-20, opacity: 0 }}
+  whileInView={{x:0, opacity: 1}}
+  transition={{type: "spring",
+  duration: 3}}
+  className="md:block hidden z-10 text-3xl px-6">
+    <div className='py-5 text-4xl'><IoMdHome/></div>
+    <div className="py-5 text-4xl"><FaUserAlt/></div>
+    <div className="py-5 text-4xl"><FaCode /></div>
+    <div className="py-5 text-4xl"><MdOutlineMail /></div>
   </motion.div>
   )
 }

@@ -17,8 +17,9 @@ interface Project {
 
 const Project = () => {
   const projects = [
-    { category: "personal", title: "Spreaky", imageSrc: Logo, link: "https://spreaky.com", imageAlt: "spreaky", description: "This is a web service for English speaking test. I made it with React, Firebase, OpenAI API, and Stripe API", detail: "/spreaky", stacks: ["React", "Firebase", "Stripe API", "OpenAI API"] },
-    { category: "company", title: "Zen eats", description: "This is a website to find vegetarian food restaurants in Japan. I made it with Node.js(Express), Ejs, and MongoDB", link: "https://yuta-hamasaki.vercel.app", imageSrc: Zen, imageAlt: "zen-eats", detail: "/", stacks: ["Node.js (Express)", "Ejs", "MongoDB"] },
+    { category: "personal", title: "Spreaky", imageSrc: Logo, link: "https://spreaky.com", imageAlt: "spreaky", description: "This is a web service for English speaking test. I made it with React, Firebase, OpenAI API, and Stripe API", detail: "/projects/spreaky", stacks: ["React", "Firebase", "Stripe API", "OpenAI API"] },
+    { category: "company", title: "Zen eats", description: "This is a website to find vegetarian food restaurants in Japan. I made it with Node.js(Express), Ejs, and MongoDB", link: "https://yuta-hamasaki.vercel.app", imageSrc: Zen, imageAlt: "zen-eats", detail: "/projects/zeneats", stacks: ["Node.js (Express)", "Ejs", "MongoDB"] },    
+    { category: "personal", title: "My Portfolio", description: "This is a website to find vegetarian food restaurants in Japan. I made it with Node.js(Express), Ejs, and MongoDB", link: "https://yuta-hamasaki.vercel.app", imageSrc: Zen, imageAlt: "zen-eats", detail: "/projects/zeneats", stacks: ["Node.js (Express)", "Ejs", "MongoDB"] }
   ];
   const [category, setCategory] = useState('all');
 

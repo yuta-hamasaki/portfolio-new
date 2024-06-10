@@ -3,7 +3,8 @@ import Image from 'next/image';
 import LeftBar from './LeftBar';
 import RightBar from "./RightBar";
 import Link from 'next/link';
-import { FaGithub, FaLinkedin, FaFilePdf, FaInstagram } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaFilePdf, FaInstagram} from "react-icons/fa";
+import { HiOutlineChevronDoubleUp } from "react-icons/hi"
 import { MdOutlineMail } from "react-icons/md";
 import gif from "./gif.gif";
 
@@ -15,9 +16,10 @@ const Hero = () => {
       <LeftBar />
       <div className="h-auto w-full flex justify-center items-center z-10">
         <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          transition={{ ease: "easeIn", duration: 2 }}
+          initial={{y:-30, opacity: 0 }}
+          whileInView={{y:0, opacity: 1}}
+          transition={{type: "spring",
+          duration: 2}}
           className="flex flex-col"
         >
           <h2 className='text-3xl'>Hi! I&apos;m</h2>
@@ -26,7 +28,7 @@ const Hero = () => {
           <motion.div
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
-            transition={{ ease: "easeIn", duration: 2 }}
+            transition={{ ease: "easeIn", duration: 0.5 }}
             className="flex flex-row md:hidden z-10 mt-6"
           >
             <Link href="https://github.com/your-github">
@@ -49,14 +51,27 @@ const Hero = () => {
       </div>
       <RightBar />
       <motion.div
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        transition={{ ease: "easeIn", duration: 2 }}
+        initial={{y:-20, opacity: 0 }}
+        whileInView={{y:0, opacity: 1}}
+        transition={{type: "spring",
+        duration: 2}}
         className='absolute bottom-0 right-0 mr-0 mb-0'
       >
-        <Image src={gif} alt="myphoto" objectFit="cover" className='h-4/5 w-auto md:w-full md:h-auto' />
+        <Image src={gif} alt="myphoto" objectFit="cover" className='h-4/5 w-auto md:w-auto md:h-auto' />
       </motion.div>
-    </div>
+          <motion.div
+            initial={{ y: -10, opacity: 1 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            transition={{
+              type: "spring",
+              duration: 3,
+              bounce: 5,
+              repeat: Infinity
+          }}
+          className="absolute bottom-0 text-4xl text-white md:text-black">
+          <HiOutlineChevronDoubleUp />
+        </motion.div>
+          </div>
   );
 }
 

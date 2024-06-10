@@ -15,7 +15,7 @@ interface ShowCaseProps {
 
 const ShowCase: React.FC<ShowCaseProps> = ({ imagePath, title, description, link, videoLink , gitLink, stacks}) => {
   return (
-    <div className='flex items-center flex-col  mx-11'>
+    <div className='flex items-center flex-col  mx-11 mt-8'>
       <div className='w-full h-64 relative'>
         <Image src={imagePath} alt={title} layout="fill" objectFit="cover" />
       </div>
