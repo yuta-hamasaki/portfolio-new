@@ -26,6 +26,9 @@ const Contact = () => {
     emailjs.sendForm(serviceKey, templateId, form.current, pubkey)
       .then((result) => {
         toast.success('Sent!');
+        if (form.current) {
+          form.current.reset();
+        }
       })
       .catch((error) => {
         toast.error('Faild sending...', error.text);
