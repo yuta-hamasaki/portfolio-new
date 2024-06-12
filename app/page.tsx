@@ -4,6 +4,7 @@ import Project from "./components/Project"
 import Header from "./components/Header"
 import { useState, useEffect } from "react"
 import Contact from "./components/Contact"
+import { Toaster } from 'react-hot-toast';
 
 
 
@@ -27,6 +28,12 @@ export default function Home() {
 
   return (
     <>
+    <Toaster 
+    position="top-center"
+    toastOptions={{
+    duration:2000,
+    }}
+    />
     {header? <Header/>
     :
     <></>

@@ -9,7 +9,7 @@ import { MdOutlineMail } from "react-icons/md";
 import gif from "./gif.gif";
 import { motion } from "framer-motion";
 import bg from "./bg.png"
-1
+
 const Hero = () => {
   return (
     <div className='h-screen bg-center pb-10 flex justify-center items-center relative' style={{ backgroundImage: `url(${bg.src})` }}>
