@@ -6,8 +6,8 @@ const page: React.FC = () => {
   return (
     <>
       <Header />
-      <div className="h-auto pt-10 bg-green-50 p-20">
-        <div className="pt-16 flex justify-center flex-col items-center">
+      <div className="h-auto pt-10 bg-green-50">
+        <div className="p-5 pt-16 flex justify-center flex-col items-center">
           <h2 className="font-bold text-2xl text-center mb-4">About Me</h2>
           <div className="flex md:flex-row flex-col justify-center items-center p-2">
             {/* Uncomment and adjust the Image component below if you want to display an image */}
@@ -26,7 +26,6 @@ const page: React.FC = () => {
             </div>
           </div>
         </div>
-
         <div className=''>
               <History />
         </div>
