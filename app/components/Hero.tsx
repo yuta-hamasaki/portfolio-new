@@ -39,14 +39,14 @@ const Hero = () => {
             initial={{ y: -30, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
             transition={{ type: 'spring', duration: 2 }}
-            whileHover={{ scale: 1.1, rotateY: 360, transition: { duration: 2 } }}
+            whileHover={{ scale: 1.1, rotateY: 360, transition: { duration: 1 } }}
             onHoverStart={handleHoverStart}
             onHoverEnd={handleHoverEnd}
-            className='text-5xl md:text-7xl font-bold py-6'
+            className='text-5xl md:text-7xl font-bold py-6 text-center'
           >
             {isHover ? (
               <>
-                濱﨑<span className='text-green-500 text-center'> 雄太</span>
+                濱﨑<span className='text-green-500'> 雄太</span>
               </>
             ) : (
               <>
@@ -93,7 +93,7 @@ const Hero = () => {
         duration: 2}}
         className='absolute bottom-0 right-0 mr-0 mb-0'
       >
-        <Image src={gif} alt="myphoto" objectFit="cover" className='h-4/5 w-auto md:w-auto md:h-auto' />
+        <Image src={gif} alt="myphoto" objectFit="cover" className='h-auto w-auto md:w-auto md:h-auto' />
       </motion.div>
           <motion.div
             initial={{ y: -10, opacity: 1 }}

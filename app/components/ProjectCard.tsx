@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
+import {motion} from "framer-motion"
 
 interface ProjectCardProps {
   title: string;
@@ -24,7 +25,11 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   stacks
 }) => {
   return (
-    <div className="bg-white p-4 rounded-md shadow-md mb-4 m-2" style={{ height: 'auto', width: '350px' }}>
+    <motion.div
+    initial={{ y: -10, opacity: 0 }}
+    whileInView={{ y: 0, opacity: 1 }}
+    transition={{ type: 'spring', duration: 2 }}
+    className="bg-white p-4 rounded-md shadow-md mb-4 m-2" style={{ height: 'auto', width: '350px' }}>
       {imageSrc && (
         <div className="mb-4 rounded-md overflow-hidden h-40 w-full relative">
           <Image src={imageSrc} alt={imageAlt} layout="fill" objectFit="cover" className='z-1'/>
@@ -50,7 +55,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
           Visit page
         </button>
       </Link>
-    </div>
+    </motion.div>
   );
 };
 
