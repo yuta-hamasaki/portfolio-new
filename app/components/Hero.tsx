@@ -1,5 +1,5 @@
 "use client"
-import React, { useState } from 'react';
+import React, { useState, useEffect} from 'react';
 import Image from 'next/image';
 import LeftBar from './LeftBar';
 import RightBar from "./RightBar";
@@ -13,6 +13,7 @@ import bg from "./bg.png"
 
 const Hero = () => {
   const [isHover, setIsHover] = useState(false);
+  const [isDesktop, setIsDesktop] = useState(true);
 
   const handleHoverStart = () => {
     setIsHover(true);
@@ -21,9 +22,19 @@ const Hero = () => {
   const handleHoverEnd = () => {
     setIsHover(false);
   };
+
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsDesktop(window.innerWidth > 768); // 768px以上の場合はデスクトップと判断
+    };
+    handleResize(); // 初期化時に1度実行
+    window.addEventListener('resize', handleResize); // リサイズ時に実行
+    return () => window.removeEventListener('resize', handleResize); // クリーンアップ
+  }, []);
   
   return (
-    <div className='h-screen bg-center pb-10 flex justify-center items-center relative' style={{ backgroundImage: `url(${bg.src})` }}>
+    <div className={`h-screen pb-10 flex justify-center items-center relative ${isDesktop ? '' : 'bg-green-50'}`} style={isDesktop ? {backgroundImage: `url(${bg.src})`} : {}}>
       <LeftBar />
       <div className="h-auto w-full flex justify-center items-center z-10">
         <div
@@ -107,7 +118,7 @@ const Hero = () => {
           className="absolute bottom-0 text-4xl text-white md:text-black">
           <HiOutlineChevronDoubleUp />
         </motion.div>
-          </div>
+    </div>
   );
 }
 
