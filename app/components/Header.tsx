@@ -16,7 +16,7 @@ export default function Header() {
     whileInView={{y:0, opacity: 1}}
     transition={{type: "spring",
     duration: 0.4}}
-    className="py-5 px-10 flex justify-between items-center fixed w-full bg-white z-50 shadow-md">
+    className="py-5 px-10 flex justify-between items-center fixed w-full bg-green-100 z-50 shadow-md">
       <div>
         <h1 className="text-2xl font-extrabold">
           <Link href="/">Yuta Hamasaki</Link>
