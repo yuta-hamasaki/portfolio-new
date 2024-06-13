@@ -49,9 +49,9 @@ export default function Header() {
         duration: 0.4}}
         className="md:hidden absolute top-16 left-0 w-full bg-white shadow-md py-2 z-1">
           <div className="flex flex-col items-center">
-            <Link href="/about"><p className="py-2">About</p></Link>
-            <Link href="/skills"><p className="py-2">Skills</p></Link>
+            <Link href="/about"><p className="py-2">About Me</p></Link>
             <Link href="#projects"><p className="py-2">Projects</p></Link>
+            <Link href="#projects"><p className="py-2">Contact</p></Link>
           </div>
         </motion.div>
       )}
