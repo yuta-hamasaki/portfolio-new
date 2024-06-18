@@ -26,10 +26,9 @@ export default function Header() {
       <div className="hidden md:flex z-1">
         <div className="text-sm font-medium flex flex-row">
           <div className="flex flex-row mr-3 px-3 py-3"> 
-          <Link href="/about"><p className="px-2">About Me</p></Link>
-            <Link href="#projects"><p className="px-2">Projects</p></Link>
-            <Link href="#projects"><p className='px-2'>Skills</p></Link>
-            <Link href="#projects"><p className='px-2'>Contact</p></Link>
+            <Link href="/#about" scroll={true}><p className="p-2">About</p></Link>
+            <Link href="/#projects" scroll={true}><p className="p-2">Projects</p></Link>
+            <Link href="/#contact" scroll={true}><p className='p-2'>Contact</p></Link>
           </div>
         </div>
       </div>
@@ -55,10 +54,9 @@ export default function Header() {
         duration: 0.4}}
         className="md:hidden absolute top-16 left-0 w-full bg-white shadow-md py-2 z-1">
           <div className="flex flex-col items-center">
-            <Link href="/about"><p className="py-2">About Me</p></Link>
-            <Link href="#projects" scroll={true}><p className="py-2">Projects</p></Link>
-            <Link href="#projects"><p className='p-2'>Skills</p></Link>
-            <Link href="#projects"><p className='p-2'>Contact</p></Link>
+            <Link href="/#about" scroll={true}><p className="py-2">About</p></Link>
+            <Link href="/#projects" scroll={true}><p className="py-2">Projects</p></Link>
+            <Link href="/#contact" scroll={true}><p className='p-2'>Contact</p></Link>
           </div>
         </motion.div>
       )}

@@ -3,6 +3,7 @@ import Hero from "./components/Hero"
 import Project from "./components/Project"
 import Header from "./components/Header"
 import MidSection from './components/MidSection'
+import About from './components/About'
 import { useState, useEffect } from "react"
 import Contact from "./components/Contact"
 import { Toaster } from 'react-hot-toast';
@@ -41,6 +42,7 @@ export default function Home() {
     }
     <Hero/>
     <MidSection/>
+    <About/>
     <Project/>
     <Contact/>
     </>

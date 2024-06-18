@@ -2,8 +2,8 @@ import React from 'react';
 import ShowCase from '../ShowCase';
 import Zen from "../../components/Zen.jpg";
 
-const Page: React.FC = () => {
-  const showCaseData = { category: "company", title: "Zen eats", description: "This is a website to find vegetarian food restaurants in Japan. I made it with Node.js(Express), Ejs, and MongoDB", link: "", imageSrc: Zen, imageAlt: "zen-eats", detail: "/", stacks: ["Node.js (Express)", "Ejs", "MongoDB"], gitLink: "https://github.com/ve-go", videoLink: "" }
+const Page = () => {
+  const showCaseData = { category: "company", title: "Zen eats", description: "This is a website to find vegetarian food restaurants in Japan. I made it with Node.js(Express), Ejs, and MongoDB", link: "", imageSrc: Zen, imageAlt: "zen-eats", detail: "/", stacks: ["Node.js (Express)", "Ejs", "MongoDB"], gitLink: "https://github.com/ve-go", videoLink: "https://www.youtube.com/embed/VojNti4rNhE" }
 
   return (
     <div>

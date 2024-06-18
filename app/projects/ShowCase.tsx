@@ -48,12 +48,18 @@ const ShowCase = ({ imagePath, title, description, link, videoLink , gitLink, st
       }
       </div>
       <div className="flex flex-row m-5">
-        <Link href={link}>
+        {link==="" ?(
+          <></>
+        ):(
+          <Link href={link}>
           <button className=' bg-green-500 hover:text-green-700 font-semibold text-white py-2 px-4 border hover:border-green-500 border-transparent rounded hover:bg-white hover:scale-110 hover:duration-300 transition duration-500 mt-2 shadow-sm '>
             Visit page
           </button>
         </Link>
-        {gitLink ? (
+        )
+        }
+
+        {gitLink? (
           <Link href={gitLink}>
             <button className='bg-transparent hover:bg-green-500 text-green-700 font-semibold hover:text-white py-2 px-4 border border-green-500 hover:border-transparent hover:scale-110 hover:duration-300 mt-2 mx-2 shadow-sm transition duration-500 rounded'>
               Github
