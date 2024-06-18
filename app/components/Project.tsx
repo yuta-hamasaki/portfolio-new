@@ -1,15 +1,16 @@
 "use client"; 
 import Logo from './Spreaky.png';
 import Zen from './Zen.jpg';
+import myportfolio from './myportfolio.png'
 import ProjectCard from './ProjectCard';
 import { useState } from "react";
 
 
 const Project = () => {
   const projects = [
-    { category: "personal", title: "Spreaky", imageSrc: Logo, link: "https://spreaky.com", imageAlt: "spreaky", description: "This is a web service for English speaking test. I made it with React, Firebase, OpenAI API, and Stripe API", detail: "/projects/spreaky", stacks: ["React", "Firebase", "Stripe API", "OpenAI API"] },
+    { category: "personal", title: "Spreaky", imageSrc: Logo, link: "https://spreaky.com", imageAlt: "spreaky", description: "This is a web service for English speaking test. I made it with React, Firebase, OpenAI API, and Stripe API", detail: "/projects/spreaky", stacks: ["React","Javascript", "Firebase", "StripeAPI", "OpenAI API"] },
     { category: "company", title: "Zen eats", description: "This is a website to find vegetarian food restaurants in Japan. I made it with Node.js(Express), Ejs, and MongoDB", link: "https://yuta-hamasaki.vercel.app", imageSrc: Zen, imageAlt: "zen-eats", detail: "/projects/zeneats", stacks: ["Node.js (Express)", "Ejs", "MongoDB"] },    
-    { category: "personal", title: "My Portfolio", description: "This is a website to find vegetarian food restaurants in Japan. I made it with Node.js(Express), Ejs, and MongoDB", link: "https://yuta-hamasaki.vercel.app", imageSrc: Zen, imageAlt: "zen-eats", detail: "/projects/zeneats", stacks: ["Node.js (Express)", "Ejs", "MongoDB"] }
+    { category: "personal", title: "My Portfolio", description: "This is my portfolio-site made with Next.js, Typescript, TailwindCSS and Email.js", link: "https://yuta-hamasaki.vercel.app", imageSrc: myportfolio, imageAlt: "zen-eats", detail: "/projects/zeneats", stacks: ["Next.js", "Typescript", "TailwindCSS"] }
   ];
   const [category, setCategory] = useState('all');
 
