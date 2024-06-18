@@ -13,12 +13,12 @@ module.exports = {
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
       animation: {
-        'loop-scroll': 'loop-scroll 30s linear infinite',
+        'loop-scroll': 'loop-scroll 10s linear infinite',
       },
       keyframes: {
         'loop-scroll': {
-          from: { transform: 'translateX(50%)' },
-          to: { transform: 'translateX(-70%)' },
+          from: { transform: 'translateX(100%)' },
+          to: { transform: 'translateX(-100%)' },
         }
       }     
     },

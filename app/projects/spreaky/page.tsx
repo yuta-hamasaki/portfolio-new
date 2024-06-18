@@ -1,6 +1,6 @@
 import React from 'react';
 import ShowCase from '../ShowCase';
-import SpreakyImg from "../../components/Spreaky.png";
+import SpreakyImg from "../../components/spreakyhome.png";
 
 const Page: React.FC = () => {
   const showCaseData = {

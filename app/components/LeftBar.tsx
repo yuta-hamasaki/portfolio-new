@@ -2,6 +2,7 @@ import {FaUserAlt, FaCode} from "react-icons/fa"
 import { IoMdHome } from "react-icons/io";
 import { MdOutlineMail } from "react-icons/md";
 import {motion} from "framer-motion"
+import Link from "next/link";
 
 const LeftBar = () => {
   return (
@@ -11,10 +12,26 @@ const LeftBar = () => {
   transition={{type: "spring",
   duration: 3}}
   className="md:block hidden z-10 text-3xl px-6">
-    <div className='py-5 text-4xl'><IoMdHome/></div>
-    <div className="py-5 text-4xl"><FaUserAlt/></div>
-    <div className="py-5 text-4xl"><FaCode /></div>
-    <div className="py-5 text-4xl"><MdOutlineMail /></div>
+    <Link href="/" scroll={true}>
+      <div className='py-5 text-4xl'>
+      <IoMdHome/>
+      </div>
+    </Link>
+    <Link href="#about" scroll={true}>
+    <div className='py-5 text-4xl'>
+    <FaUserAlt/>
+    </div>
+    </Link>
+    <Link href="#projects" scroll={true}>
+    <div className='py-5 text-4xl'>
+    <FaCode />
+    </div>
+    </Link>
+    <Link href="#contact" scroll={true}>
+    <div className='py-5 text-4xl'>
+    <MdOutlineMail />
+    </div>
+    </Link>
   </motion.div>
   )
 }
