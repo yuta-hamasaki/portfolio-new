@@ -14,7 +14,7 @@ interface ProjectCardProps {
   stacks: string[];
 }
 
-const ProjectCard: React.FC<ProjectCardProps> = ({
+const ProjectCard= ({
   title,
   description,
   link,
@@ -23,7 +23,8 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   category,
   detail,
   stacks
-}) => {
+}: ProjectCardProps ) => {
+  
   return (
     <motion.div
     initial={{ y: -10, opacity: 0 }}

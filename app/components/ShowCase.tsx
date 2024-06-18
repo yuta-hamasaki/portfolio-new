@@ -13,7 +13,7 @@ interface ShowCaseProps {
   // pageImg: StaticImageData
 }
 
-const ShowCase: React.FC<ShowCaseProps> = ({ imagePath, title, description, link, videoLink , gitLink, stacks}) => {
+const ShowCase = ({ imagePath, title, description, link, videoLink , gitLink, stacks}:ShowCaseProps) => {
   return (
     <div className='flex items-center flex-col  mx-11'>
       <div className='w-full h-64 relative'>

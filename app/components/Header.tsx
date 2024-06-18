@@ -26,19 +26,25 @@ export default function Header() {
       <div className="hidden md:flex z-1">
         <div className="text-sm font-medium flex flex-row">
           <div className="flex flex-row mr-3 px-3 py-3"> 
-            <Link href="/about"><p>About</p></Link>
-            <Link href="/skills"><p className="px-5">Skills</p></Link>
-            <Link href="#projects"><p>Projects</p></Link>
+          <Link href="/about"><p className="px-2">About Me</p></Link>
+            <Link href="#projects"><p className="px-2">Projects</p></Link>
+            <Link href="#projects"><p className='px-2'>Skills</p></Link>
+            <Link href="#projects"><p className='px-2'>Contact</p></Link>
           </div>
         </div>
       </div>
 
+
       <div className="md:hidden">
-        <button onClick={toggleMenu} className="block text-gray-700 hover:text-gray-900 focus:text-gray-900 focus:outline-none">
-          <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-          </svg>
-        </button>
+      <button onClick={toggleMenu} className="flex flex-col justify-center items-center">
+        <span className={`bg-black block transition-all duration-300 ease-out h-0.5 w-6 rounded-
+        ${isOpen ? 'rotate-45 translate-y-1' : '-translate-y-0.5'}`} >
+        </span>
+        <span className={`bg-black block transition-all duration-300 ease-out h-0.5 w-6 rounded-sm my-0.5 ${isOpen ? 'opacity-0' : 'opacity-100'}`} >
+        </span>
+        <span className={`bg-black block transition-all duration-300 ease-out h-0.5 w-6 rounded-sm ${isOpen ? '-rotate-45 -translate-y-1' : 'translate-y-0.5'}`} >
+        </span>
+      </button>
       </div>
 
       {isOpen && (
@@ -51,7 +57,8 @@ export default function Header() {
           <div className="flex flex-col items-center">
             <Link href="/about"><p className="py-2">About Me</p></Link>
             <Link href="#projects"><p className="py-2">Projects</p></Link>
-            <Link href="#projects"><p className="py-2">Contact</p></Link>
+            <Link href="#projects"><p className='p-2'>Skills</p></Link>
+            <Link href="#projects"><p className='p-2'>Contact</p></Link>
           </div>
         </motion.div>
       )}

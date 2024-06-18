@@ -2,7 +2,7 @@ import Image from 'next/image';
 import Header from '../components/Header';
 import History from '../components/History';
 
-const page: React.FC = () => {
+const page = () => {
   return (
     <>
       <Header />
@@ -27,7 +27,7 @@ const page: React.FC = () => {
           </div>
         </div>
         <div className=''>
-              <History />
+          <History />
         </div>
 
       </div>

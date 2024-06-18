@@ -4,16 +4,6 @@ import Zen from './Zen.jpg';
 import ProjectCard from './ProjectCard';
 import { useState } from "react";
 
-interface Project {
-  category: string;
-  title: string;
-  description: string;
-  link: string;
-  imageSrc: any;
-  imageAlt: string;
-  detail: string;
-  stacks: string[];
-}
 
 const Project = () => {
   const projects = [

@@ -106,18 +106,10 @@ const Hero = () => {
       >
         <Image src={gif} alt="myphoto" objectFit="cover" className='h-auto w-auto md:w-auto md:h-auto' />
       </motion.div>
-          <motion.div
-            initial={{ y: -10, opacity: 1 }}
-            whileInView={{ y: 0, opacity: 1 }}
-            transition={{
-              type: "spring",
-              duration: 3,
-              bounce: 5,
-              repeat: Infinity
-          }}
-          className="absolute bottom-0 text-4xl text-white md:text-black">
+        <div
+          className="animate-bounce absolute bottom-0 text-4xl text-white md:text-black">
           <HiOutlineChevronDoubleUp />
-        </motion.div>
+        </div>
     </div>
   );
 }

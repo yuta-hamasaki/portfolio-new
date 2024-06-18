@@ -1,13 +1,6 @@
 import HistoryCard from './HisoryCard'
 
 
-interface History{
-  time:string;
-  place:string;
-  title: string;
-  desc: string;
-}
-
 const History = () => {
   const history = [
     {

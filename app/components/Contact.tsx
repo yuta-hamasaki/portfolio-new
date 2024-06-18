@@ -38,7 +38,7 @@ const Contact = () => {
   return (
     <div className="container my-5 mx-auto py-8">
       <h1 className="text-center text-3xl font-bold mb-4">Contact Me</h1>
-      <form ref={form} onSubmit={sendEmail} className="w-full max-w-lg mx-auto mt-8">
+      <form ref={form} onSubmit={sendEmail} className="w-full mt-8 px-10 flex justify-center flex-col md:px-20 md:mx-5">
         <div className="mb-6">
           <label htmlFor="name" className="block mb-2 text-sm text-gray-600">Name</label>
           <input type="text" id="name" name="name" className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-blue-500" required />
