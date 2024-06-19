@@ -7,7 +7,7 @@ import Link from 'next/link';
 import { FaGithub, FaLinkedin, FaFilePdf, FaInstagram} from "react-icons/fa";
 import { HiOutlineChevronDoubleUp } from "react-icons/hi"
 import { MdOutlineMail } from "react-icons/md";
-// import gif from "./gif.gif";
+import gif from "./gif.gif";
 
 import { motion } from "framer-motion";
 import bg from "./bg.png"
@@ -103,10 +103,10 @@ const Hero = () => {
         whileInView={{y:0, opacity: 1}}
         transition={{type: "spring",
         duration: 2}}
-        className='absolute bottom-0 right-0 mr-0 mb-0 flex justify-end'
+        className='absolute bottom-0 right-0 mr-0 mb-0 flex justify-end '
       >
-        {/* <Image src={gif} alt="myphoto" objectFit="cover" className='h-auto w-auto md:w-auto md:h-auto' /> */}
-        <video src={require("./gif.mp4")} autoPlay loop playsInline preload="auto" className=' h-auto w-auto md:w-3/5 md:h-auto ' >
+      <Image src={gif} alt="myphoto" objectFit="cover" className='h-auto w-auto md:w-auto md:h-auto md:hidden flex' />
+        <video src={require("./gif.mp4")} autoPlay loop muted playsInline preload="auto" className=' h-auto w-auto md:w-3/5 md:h-auto md:flex hidden' >
         </video>
 
       </motion.div>
