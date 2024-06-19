@@ -29,7 +29,7 @@ const MidSection = () => {
         {mid.map(m =>{
         return(
           <>
-            <div className="flex flex-row">
+            <div className="flex flex-row" id="midsection">
             <h3 className="text-5xl px-4 font-bold text-white transform scale-x-[-1]"><WiTrain /></h3>
               <h3 className="text-2xl py-2 font-bold text-white">Skills:</h3>
               <h3 className="text-3xl py-2 px-3 text-orange-500"><FaHtml5/></h3>

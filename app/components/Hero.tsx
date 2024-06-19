@@ -106,13 +106,15 @@ const Hero = () => {
         className='absolute bottom-0 right-0 mr-0 mb-0 flex justify-end'
       >
         {/* <Image src={gif} alt="myphoto" objectFit="cover" className='h-auto w-auto md:w-auto md:h-auto' /> */}
-        <video src={require("./gif.mp4")} autoPlay loop className=' h-auto w-auto md:w-3/5 md:h-auto ' >
+        <video src={require("./gif.mp4")} autoPlay loop playsInline preload="auto" className=' h-auto w-auto md:w-3/5 md:h-auto ' >
         </video>
 
       </motion.div>
         <div
           className="animate-bounce absolute bottom-0 text-4xl text-white md:text-black">
-          <HiOutlineChevronDoubleUp />
+            <Link href="#midsection">
+            <HiOutlineChevronDoubleUp />
+            </Link>
         </div>
     </div>
   );
