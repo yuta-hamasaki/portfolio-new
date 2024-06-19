@@ -26,7 +26,7 @@ const MidSection = () => {
     <div className="w-auto bg-blue-900 flex flex-row justify-center overflow-hidden">
       <div
         className="w-auto flex flex-row py-1 space-x-15 animate-loop-scroll"  aria-hidden="true">
-        {mid.map(m =>{
+        {mid.map((m, key) =>{
         return(
           <>
             <div className="flex flex-row" id="midsection">

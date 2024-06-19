@@ -26,10 +26,7 @@ const ProjectCard= ({
 }: ProjectCardProps ) => {
   
   return (
-    <motion.div
-    initial={{ y: -10, opacity: 0 }}
-    whileInView={{ y: 0, opacity: 1 }}
-    transition={{ type: 'spring', duration: 2 }}
+    <div
     className="bg-white p-4 rounded-md shadow-md mb-4 m-2" style={{ height: 'auto', width: '350px' }}>
       {imageSrc && (
         <div className="mb-4 rounded-md overflow-hidden h-40 w-full relative">
@@ -56,7 +53,7 @@ const ProjectCard= ({
           Visit page
         </button>
       </Link>
-    </motion.div>
+    </div>
   );
 };
 

@@ -11,27 +11,27 @@ const RightBar = () => {
   transition={{type: "spring",
   duration: 3}}
   className="md:block hidden z-10 p-4">
-    <div className="py-3 text-5xl ">
+    <div className="py-3 text-4xl ">
       <Link href="https://github.com/yuta-hamasaki">
         <FaGithub />
       </Link>
     </div>
-    <div className="py-3 text-5xl ">
+    <div className="py-3 text-4xl ">
       <Link href="https://www.linkedin.com/in/yuta-hamasaki-623400215/">
         <FaLinkedin/>
       </Link>
     </div>
-    <div className="py-3 text-5xl">
+    <div className="py-3 text-4xl">
       <Link href="#">
       <FaFilePdf/>
       </Link>
     </div>
-    <div className="py-3 text-5xl ">
+    <div className="py-3 text-4xl ">
       <Link href="mailto:yh02052002@icloud.com">
         <MdOutlineMail/>
       </Link>
     </div>
-    <div className="py-3 text-5xl">
+    <div className="py-3 text-4xl">
       <Link href="https://instagram.com/yuta.h_25">
         <FaInstagram/>
       </Link>
