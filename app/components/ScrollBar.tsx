@@ -1,4 +1,4 @@
-import { motion, useScroll, useTransform } from 'framer-motion';
+import { m, useScroll, useTransform } from 'framer-motion';
 import { FaPlane } from 'react-icons/fa';
 import React from 'react';
 
@@ -8,7 +8,7 @@ const ScrollBar = () => {
 
   return (
     <div className="flex flex-col">
-      <motion.div
+      <m.div
         className="z-50 bg-green-500"
         style={{
           scaleX: scrollYProgress,
@@ -19,7 +19,7 @@ const ScrollBar = () => {
           top: 0,
         }}
       />
-      <motion.div
+      <m.div
         className="text-2xl z-50"
         style={{
           x: planeX,
@@ -30,7 +30,7 @@ const ScrollBar = () => {
         }}
       >
         <FaPlane />
-      </motion.div>
+      </m.div>
     </div>
   );
 };
