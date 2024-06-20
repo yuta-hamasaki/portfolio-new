@@ -27,17 +27,17 @@ const ProjectCard= ({
   
   return (
     <div
-    className="bg-white p-4 rounded-md shadow-md mb-4 m-2" style={{ height: 'auto', width: '350px' }}>
+    className="bg-white p-4 rounded-md shadow-md mb-4 m-2 min-h-96" style={{height: 'auto', width: '360px' }}>
       {imageSrc && (
         <div className="mb-4 rounded-md overflow-hidden h-40 w-full relative">
-          <Image src={imageSrc} alt={imageAlt} layout="fill" objectFit="cover" className='z-1'/>
+          <Image src={imageSrc} alt={imageAlt} layout="fill" objectFit="cover" className='h-40 w-full'/>
         </div>
       )}
       <p className="rounded-full border border-sky-100 bg-sky-50 px-2 py-0.5 text-sky-300 bg-sky-500/10 w-fit">{category}</p>
       <h2 className="text-xl font-semibold text-gray-800 mb-2">{title}</h2>
       <div className="my-2">
         {stacks.map((stack, index) => (
-          <span key={index} className="p-1 m-1  text-xs font-semibold text-gray-700 border border-green-500 rounded">
+          <span key={index} className=" m-1  text-xs font-semibold text-gray-700 border border-green-500 rounded" style={{padding:'1px'}}>
             {stack}
           </span>
         ))}
