@@ -1,16 +1,19 @@
 "use client"
 import { useState } from 'react';
 import Link from 'next/link';
-import {motion} from 'framer-motion'
+import { motion } from "framer-motion";
+
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
+
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
 
   return (
+  <>
     <motion.header
     initial={{y:-20, opacity: 0 }}
     whileInView={{y:0, opacity: 1}}
@@ -61,5 +64,6 @@ export default function Header() {
         </motion.div>
       )}
     </motion.header>
+  </>
   );
 }
