@@ -41,7 +41,7 @@ const History = () => {
 
   return (
     <div className="p-1 flex flex-col md:flex-row ">
-      <div className="px-1 md:w-1/2">
+      <div className="px-1 m-2 md:w-1/2">
         <h2 className="text-center font-bold text-xl">Education</h2>
         <div className="relative pl-10 m-3">
             <div className="absolute left-11 top-0 bottom-0 w-1 bg-gray-300"></div>
