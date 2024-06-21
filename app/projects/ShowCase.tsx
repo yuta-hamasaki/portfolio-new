@@ -59,13 +59,13 @@ const ShowCase = ({ imagePath, title, description, link, videoLink , gitLink, st
         )
         }
 
-        {gitLink? (
+        {gitLink===""? (<></>):(
           <Link href={gitLink}>
             <button className='bg-transparent hover:bg-green-500 text-green-700 font-semibold hover:text-white py-2 px-4 border border-green-500 hover:border-transparent hover:scale-110 hover:duration-300 mt-2 mx-2 shadow-sm transition duration-500 rounded'>
               Github
             </button>
           </Link>
-        ) : null}
+        )}
       </div>
     </div>
   );
