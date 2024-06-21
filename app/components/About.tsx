@@ -8,9 +8,9 @@ const About = () => {
   const pathname = usePathname();
   return (
     <div>
-      <div className=" flex justify-center flex-col" id="about">
+      <div className="flex justify-center flex-col" id="about">
           <h2 className="font-bold text-2xl text-center mb-4">About Me</h2>
-          <div className="flex md:flex-row flex-col md:items-start items-center justify-center  p-2"> 
+          <div className="flex md:flex-row flex-col md:items-start items-center justify-center p-2"> 
           <Image 
               src={Me} 
               alt="My pic" 

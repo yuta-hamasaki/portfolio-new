@@ -23,13 +23,13 @@ const Project = () => {
       <div className="flex flex-col items-center"> 
         <h1 className='text-2xl font-bold text-gray-700 mb-4 text-center'>Projects</h1>
         <div className='p-3'>
-          <button onClick={() => handleCategoryChange('all')} className={`p-2 md:p-3 rounded-2xl shadow-md mb-2 md:mb-0 mr-2 text-gray-700 font-semibold text-xs transition duration-500 hover:scale-110 ${category === 'all' ? 'bg-green-300' : 'bg-white'}`}>
+          <button onClick={() => handleCategoryChange('all')} className={`p-2 md:p-3 rounded-xl shadow-md mb-2 md:mb-0 mr-2 text-gray-700 font-semibold text-xs transition duration-500 hover:scale-110 ${category === 'all' ? 'bg-green-500 text-white' : 'bg-white'}`}>
             All
           </button>
-          <button onClick={() => handleCategoryChange('personal')} className={`p-2 md:p-3 rounded-2xl shadow-md mb-2 md:mb-0 mr-2 text-gray-700 font-semibold text-xs transition duration-500 hover:scale-110 ${category === 'personal' ? 'bg-green-300' : 'bg-white'}`}>
+          <button onClick={() => handleCategoryChange('personal')} className={`p-2 md:p-3 rounded-xl shadow-md mb-2 md:mb-0 mr-2 text-gray-700 font-semibold text-xs transition duration-500 hover:scale-110 ${category === 'personal' ? 'bg-green-500 text-white' : 'bg-white'}`}>
             Personal
           </button>
-          <button onClick={() => handleCategoryChange('company')} className={`p-2 md:p-3 rounded-2xl shadow-md mb-2 md:mb-0 mr-2 text-gray-700 font-semibold text-xs transition duration-500 hover:scale-110 ${category === 'company' ? 'bg-green-300' : 'bg-white'}`}>
+          <button onClick={() => handleCategoryChange('company')} className={`p-2 md:p-3 rounded-xl shadow-md mb-2 md:mb-0 mr-2 text-gray-700 font-semibold text-xs transition duration-500 hover:scale-110 ${category === 'company' ? 'bg-green-500 text-white' : 'bg-white'}`}>
             Company
           </button>
         </div>
