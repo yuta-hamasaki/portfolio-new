@@ -10,7 +10,7 @@ const Page: React.FC = () => {
     imageAlt: "spreaky",
     description: "This is a web service for English speaking test. I made it with React, Firebase, OpenAI API, and Stripe API",
     detail: "/spreaky",
-    videoLink: "https://youtu.be/embed/FPgGqqVrt0o",
+    videoLink: "https://www.youtube.com/embed/FPgGqqVrt0o",
     gitLink: "",
     stacks:[
         'React',
