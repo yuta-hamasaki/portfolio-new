@@ -36,10 +36,14 @@ const MidSection = () => {
                 <h3 className="text-3xl py-2 px-3 text-yellow-300"><IoLogoJavascript /></h3>
                 <h3 className="text-3xl py-2 px-3 text-blue-300"><FaReact /></h3>
                 <h3 className="text-3xl py-2 px-3 text-green-500"><FaNodeJs /></h3>
-                <h3 className="text-3xl py-2 px-3 text-state-400"><RiNextjsFill /></h3>
+                <h3 className="text-3xl py-2 px-3 text-slate-400"><RiNextjsFill /></h3>
                 <h3 className="text-3xl py-2 px-3 text-blue-300"><BiLogoTypescript /></h3>
                 <h3 className="text-3xl py-2 px-3 text-green-500"><SiMongodb /></h3>
                 <h3 className="text-3xl py-2 px-3 text-blue-300"><DiPostgresql /></h3>
+
+                <h3 className="text-xl py-2 px-3 text-blue-500">Outgoing</h3>
+                <h3 className="text-xl py-2 px-1 text-blue-500 flex row">Hard</h3>
+                <h3 className="text-xl py-2 px-1 text-blue-500 flex row"> worker</h3>
               </div>
             );
           })}
