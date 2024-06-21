@@ -19,7 +19,7 @@ const Project = () => {
   }
 
   return (
-    <div className='w-full bg-green-100' id="projects">
+    <div className='w-full bg-green-100 pb-3' id="projects">
       <div className="flex flex-col items-center"> 
         <h1 className='text-2xl font-bold text-gray-700 mb-4 text-center'>Projects</h1>
         <div className='p-3'>
