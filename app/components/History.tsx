@@ -25,31 +25,25 @@ const History = () => {
 
   const experience = [
     {
-      time:"2020-2022",
-      place:"Kagawa - Japan",
-      title:"Software - Intern",
-      desc:"Test",
+      time:"2021-current",
+      place:"Remote",
+      title:"Language tutor - Freelance",
+      desc:"Tutor Japanese",
     },
     {
-      time:"2020-2022",
-      place:"Kagawa - Japan",
-      title:"Software - Intern",
-      desc:"Test",
-    },
-    {
-      time:"2020-2022",
-      place:"Kagawa - Japan",
-      title:"Software - Intern",
-      desc:"Test",
+      time:"2023 - 3months",
+      place:"Remote",
+      title:"UX research - Intern",
+      desc:"Provided advice based on the results of a user survey",
     },
   ]
 
 
   return (
-    <div className="p-5 flex flex-col md:flex-row ">
-      <div className="px-2 md:w-1/2">
+    <div className="p-1 flex flex-col md:flex-row ">
+      <div className="px-1 md:w-1/2">
         <h2 className="text-center font-bold text-xl">Education</h2>
-        <div className="relative pl-10 m-4">
+        <div className="relative pl-10 m-3">
             <div className="absolute left-11 top-0 bottom-0 w-1 bg-gray-300"></div>
             {history.map((content,index)=>{
               return(

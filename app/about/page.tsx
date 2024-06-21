@@ -8,7 +8,7 @@ const page = () => {
     <>
       <Header />
       <div className="h-auto pt-10">
-        <div className="mt-20 md:px-36 px-10">
+        <div className="mt-20 md:px-36 px-5">
         <About/>
         </div>
         <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">

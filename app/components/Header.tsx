@@ -15,7 +15,7 @@ const Header = () => {
       initial={{ y: -20, opacity: 0 }}
       whileInView={{ y: 0, opacity: 1 }}
       transition={{ type: "spring", duration: 0.4 }}
-      className="py-5 px-10 flex justify-between items-center fixed w-full z-50"
+      className="py-5 px-10 flex justify-between items-center fixed w-full z-50 md:bg-transparent bg-white md:shadow-none shadow-sm"
     >
       <div>
         <h1 className="text-2xl font-extrabold text-green-500">
@@ -38,7 +38,7 @@ const Header = () => {
       </div>
 
       <div className="md:hidden">
-        <button onClick={toggleMenu} className="flex flex-col justify-center items-center">
+        <button onClick={toggleMenu} className="flex flex-col justify-center items-center z-50">
           <span className={`block h-0.5 w-6 bg-black transition-transform duration-300 ease-out ${isOpen ? 'rotate-45 translate-y-1' : '-translate-y-0.5'}`} />
           <span className={`block h-0.5 w-6 bg-black transition-opacity duration-300 ease-out my-0.5 ${isOpen ? 'opacity-0' : 'opacity-100'}`} />
           <span className={`block h-0.5 w-6 bg-black transition-transform duration-300 ease-out ${isOpen ? '-rotate-45 -translate-y-1' : 'translate-y-0.5'}`} />
