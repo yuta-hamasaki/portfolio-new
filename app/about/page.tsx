@@ -8,7 +8,7 @@ const page = () => {
   return (
     <>
       <Header />
-      <div className="h-auto pt-10">
+      <div className="h-auto pt-10 pb-2">
         <div className="mt-20 md:px-36 px-5">
         <About/>
         </div>
