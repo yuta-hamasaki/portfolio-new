@@ -33,7 +33,7 @@ const Project = () => {
             Company
           </button>
         </div>
-        <div className="flex flex-wrap items-center justify-center">
+        <div className="flex flex-wrap items-center justify-center ">
           {projects.map((project, index) => {
             if (category === 'all' || project.category === category) {
               return (

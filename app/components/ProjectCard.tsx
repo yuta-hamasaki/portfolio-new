@@ -30,7 +30,10 @@ const ProjectCard= ({
     className="bg-white p-4 rounded-md shadow-md mb-4 m-2 min-h-96" style={{height: 'auto', width: '360px' }}>
       {imageSrc && (
         <div className="mb-4 rounded-md overflow-hidden h-40 w-full relative">
-          <Image src={imageSrc} alt={imageAlt} layout="fill" objectFit="cover" className='h-40 w-full'/>
+          <Image src={imageSrc} alt={imageAlt}
+          width={400}
+          height={225}
+          className='h-40 w-full object-cover'/>
         </div>
       )}
       <p className="rounded-full border border-sky-100 bg-sky-50 px-2 py-0.5 text-sky-300 bg-sky-500/10 w-fit">{category}</p>
