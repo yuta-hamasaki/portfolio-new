@@ -7,7 +7,7 @@ import Link from 'next/link';
 const About = () => {
   const pathname = usePathname();
   return (
-    <div>
+    <div className='pt-7'>
       <div className="flex justify-center flex-col" id="about">
           <h2 className="font-bold text-2xl text-center mb-4">About Me</h2>
           <div className="flex md:flex-row flex-col md:items-start items-center justify-center p-2"> 

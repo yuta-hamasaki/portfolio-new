@@ -15,7 +15,7 @@ const Header = () => {
       initial={{ y: -20, opacity: 0 }}
       whileInView={{ y: 0, opacity: 1 }}
       transition={{ type: "spring", duration: 0.4 }}
-      className="py-5 px-10 flex justify-between items-center fixed w-full z-50 md:bg-transparent bg-white md:shadow-none shadow-sm"
+      className="py-5 px-10 flex justify-between items-center fixed w-full z-50 md:bg-transparent bg-white md:shadow-none shadow-s backdrop-blur"
     >
       <div>
         <h1 className="text-2xl font-extrabold text-green-500">

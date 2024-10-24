@@ -8,8 +8,7 @@ import { useState } from "react";
 
 const Project = () => {
   const projects = [
-    { category: "personal", title: "Spreaky", imageSrc: Logo, link: "https://spreaky.com", imageAlt: "spreaky", description: "This is a web service for English speaking test. I made it with React, Firebase, OpenAI API, and Stripe API", detail: "/projects/spreaky", stacks: ["React","Javascript", "Firebase", "StripeAPI", "OpenAI API"] },
-    { category: "company", title: "Zen eats", description: "This is a website to find vegetarian food restaurants in Japan. I made it with Node.js(Express), Ejs, and MongoDB", link: "https://github.com/yuta-hamasaki/ve-go", imageSrc: Zen, imageAlt: "zen-eats", detail: "/projects/zeneats", stacks: ["Node.js (Express)", "Ejs", "MongoDB"] },    
+    { category: "team", title: "Zen eats", description: "This is a website to find vegetarian food restaurants in Japan. I made it with Node.js(Express), Ejs, and MongoDB", link: "https://github.com/yuta-hamasaki/ve-go", imageSrc: Zen, imageAlt: "zen-eats", detail: "/projects/zeneats", stacks: ["Node.js (Express)", "Ejs", "MongoDB"] },    
     { category: "personal", title: "My Portfolio", description: "This is my portfolio-site made with Next.js, Typescript, TailwindCSS and Email.js", link: "https://yutahamasaki.vercel.app", imageSrc: myportfolio, imageAlt: "zen-eats", detail: "/projects/portfolio", stacks: ["Next.js", "Typescript", "TailwindCSS"] }
   ];
   const [category, setCategory] = useState('all');
@@ -29,8 +28,8 @@ const Project = () => {
           <button onClick={() => handleCategoryChange('personal')} className={`p-2 md:p-3 rounded-xl shadow-md mb-2 md:mb-0 mr-2 text-gray-700 font-semibold text-xs transition duration-500 hover:scale-110 ${category === 'personal' ? 'bg-green-500 text-white' : 'bg-white'}`}>
             Personal
           </button>
-          <button onClick={() => handleCategoryChange('company')} className={`p-2 md:p-3 rounded-xl shadow-md mb-2 md:mb-0 mr-2 text-gray-700 font-semibold text-xs transition duration-500 hover:scale-110 ${category === 'company' ? 'bg-green-500 text-white' : 'bg-white'}`}>
-            Company
+          <button onClick={() => handleCategoryChange('team')} className={`p-2 md:p-3 rounded-xl shadow-md mb-2 md:mb-0 mr-2 text-gray-700 font-semibold text-xs transition duration-500 hover:scale-110 ${category === 'team' ? 'bg-green-500 text-white' : 'bg-white'}`}>
+            Team
           </button>
         </div>
         <div className="flex flex-wrap items-center justify-center ">
