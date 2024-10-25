@@ -8,7 +8,7 @@ import { useState } from "react";
 
 const Project = () => {
   const projects = [
-    { category: "team", title: "Zen eats", description: "This is a website to find vegetarian food restaurants in Japan. I made it with Node.js(Express), Ejs, and MongoDB", link: "https://github.com/yuta-hamasaki/ve-go", imageSrc: Zen, imageAlt: "zen-eats", detail: "/projects/zeneats", stacks: ["Node.js (Express)", "Ejs", "MongoDB"] },    
+    { category: "Team", title: "Zen eats", description: "This is a website to find vegetarian food restaurants in Japan. I made it with Node.js(Express), Ejs, and MongoDB", link: "https://github.com/yuta-hamasaki/ve-go", imageSrc: Zen, imageAlt: "zen-eats", detail: "/projects/zeneats", stacks: ["Node.js (Express)", "Ejs", "MongoDB"] },    
     { category: "personal", title: "My Portfolio", description: "This is my portfolio-site made with Next.js, Typescript, TailwindCSS and Email.js", link: "https://yutahamasaki.vercel.app", imageSrc: myportfolio, imageAlt: "zen-eats", detail: "/projects/portfolio", stacks: ["Next.js", "Typescript", "TailwindCSS"] }
   ];
   const [category, setCategory] = useState('all');
@@ -18,7 +18,7 @@ const Project = () => {
   }
 
   return (
-    <div className='w-full bg-green-100 pb-3' id="projects">
+    <div className='w-full bg-green-100 py-16' id="projects">
       <div className="flex flex-col items-center"> 
         <h1 className='text-2xl font-bold text-gray-700 mb-4 text-center'>Projects</h1>
         <div className='p-3'>
