@@ -1,11 +1,10 @@
 "use client"
-import dynamic from 'next/dynamic';
 import Hero from "./components/Hero"
-const Project = dynamic(() => import("./components/Project"), { ssr: false });
-const Header = dynamic(() => import("./components/Header"), { ssr: false });
-const About = dynamic(() => import("./components/About"), { ssr: false });
-const Contact = dynamic(() => import("./components/Contact"), { ssr: false });
-const ScrollBar = dynamic(() => import("./components/ScrollBar"), { ssr: false });
+import Project from "./components/Project";
+import Header from "./components/Header";
+import About from "./components/About";
+import Contact from "./components/Contact";
+import ScrollBar from "./components/ScrollBar";
 import { useState, useEffect } from "react"
 import { Toaster } from 'react-hot-toast';
 import Footer from './components/Footer'
