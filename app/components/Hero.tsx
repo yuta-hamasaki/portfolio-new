@@ -1,14 +1,11 @@
 "use client";
 import React, { useState, useEffect } from 'react';
-import dynamic from 'next/dynamic';
 import Link from 'next/link';
 import { LazyMotion,domAnimation, m } from 'framer-motion';
 import { FaGithub, FaLinkedin, FaFilePdf, FaInstagram } from "react-icons/fa";
 import { HiOutlineChevronDoubleUp } from "react-icons/hi";
 import { MdOutlineMail } from "react-icons/md";
 import bg from './bg2.png';
-
-
 
 
 const Hero = () => {
@@ -79,7 +76,7 @@ const Hero = () => {
           muted
           playsInline
           preload="none"
-          className='h-auto md:w-2/5 w-full flex md:mr-10'
+          className='h-auto md:w-2/5 w-full md:flex md:mr-10 hidden'
           onLoadStart={(e) => e.currentTarget.classList.add('opacity-0')}
           onCanPlay={(e) => e.currentTarget.classList.add('opacity-100')}
           style={{ transition: 'opacity 0.5s' }}
