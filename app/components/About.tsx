@@ -1,6 +1,6 @@
 "use client"
 import Image from 'next/image';
-import Me from './YutaHamasaki_Img.JPG' 
+import Me from '@/public/YutaHamasaki_Img.JPG' 
 import { usePathname } from "next/navigation";
 import Link from 'next/link';
 

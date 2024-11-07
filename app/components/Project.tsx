@@ -1,7 +1,6 @@
 "use client"; 
-import Logo from './Spreaky.png';
-import Zen from './Zen.jpg';
-import myportfolio from './myportfolio.png'
+import Zen from '@/public/Zen.jpg';
+import myportfolio from '@/public/myportfolio.png'
 import ProjectCard from './ProjectCard';
 import { useState } from "react";
 

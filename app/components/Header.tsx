@@ -31,6 +31,9 @@ const Header = () => {
           <Link href="/#projects" scroll={true}>
             <p className="p-2">Projects</p>
           </Link>
+          <Link href="/certificates" scroll={true}>
+            <p className="p-2">Certificates</p>
+          </Link>
           <Link href="/#contact" scroll={true}>
             <p className="p-2">Contact</p>
           </Link>
@@ -50,6 +53,7 @@ const Header = () => {
           <nav className="flex flex-col items-center">
             <Link href="/#about" scroll={true}><p className="py-2">About</p></Link>
             <Link href="/#projects" scroll={true}><p className="py-2">Projects</p></Link>
+            <Link href="/certificates"><p className="py-2">Certificetes</p></Link>
             <Link href="/#contact" scroll={true}><p className="py-2">Contact</p></Link>
           </nav>
         </div>

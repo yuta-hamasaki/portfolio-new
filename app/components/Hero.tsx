@@ -5,7 +5,7 @@ import { LazyMotion,domAnimation, m } from 'framer-motion';
 import { FaGithub, FaLinkedin, FaFilePdf, FaInstagram } from "react-icons/fa";
 import { HiOutlineChevronDoubleUp } from "react-icons/hi";
 import { MdOutlineMail } from "react-icons/md";
-import bg from './bg2.png';
+import bg from '@/public/bg2.png';
 
 
 const Hero = () => {
@@ -70,7 +70,7 @@ const Hero = () => {
       </div>
       <div className='absolute bottom-0 right-0 mr-0 mb-0 flex justify-end'>
         <video
-          src={require("./gif.mp4")}
+          src={require("@/public/gif.mp4")}
           autoPlay
           loop
           muted
