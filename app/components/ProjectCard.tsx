@@ -4,24 +4,24 @@ import React from 'react';
 import {motion} from "framer-motion"
 
 interface ProjectCardProps {
+  id:string;
   title: string;
   description: string;
   link: string;
   imageSrc: any;
   imageAlt: string;
   category: string;
-  detail: string;
   stacks: string[];
 }
 
 const ProjectCard= ({
+  id,
   title,
   description,
   link,
   imageSrc,
   imageAlt,
   category,
-  detail,
   stacks
 }: ProjectCardProps ) => {
   
@@ -39,14 +39,14 @@ const ProjectCard= ({
       <p className="rounded-full border border-sky-100 bg-sky-50 px-2 py-0.5 text-sky-300 bg-sky-500/10 w-fit">{category}</p>
       <h2 className="text-xl font-semibold text-gray-800 mb-2">{title}</h2>
       <div className="my-2">
-        {stacks.map((stack, index) => (
-          <span key={index} className=" m-1  text-xs font-semibold text-gray-700 border border-green-500 rounded" style={{padding:'1px'}}>
+        {stacks.map((stack) => (
+          <span key={id} className=" m-1  text-xs font-semibold text-gray-700 border border-green-500 rounded" style={{padding:'1px'}}>
             {stack}
           </span>
         ))}
       </div>
-      <p className="text-gray-600 text-sm">{description}</p>
-      <Link href={detail} passHref>
+      <p className="text-gray-600 text-sm line-clamp-2">{description}</p>
+      <Link href={`/projects/${id}`} passHref>
         <button className="bg-green-500 hover:text-green-700 font-semibold text-white py-2 px-4 border hover:border-green-500 border-transparent rounded hover:bg-white hover:scale-110 hover:duration-300 transition duration-500 mt-2 shadow-sm">
           Find out more
         </button>

@@ -1,17 +1,13 @@
 "use client"; 
-import Zen from '@/public/Zen.jpg';
-import myportfolio from '@/public/myportfolio.png'
+import {Portfolio_Data} from '@/utils/portfolio'
 import ProjectCard from './ProjectCard';
 import { useState } from "react";
 
 
 const Project = () => {
-  const projects = [
-    { category: "Team", title: "Zen eats", description: "This is a website to find vegetarian food restaurants in Japan. I made it with Node.js(Express), Ejs, and MongoDB", link: "https://github.com/yuta-hamasaki/ve-go", imageSrc: Zen, imageAlt: "zen-eats", detail: "/projects/zeneats", stacks: ["Node.js (Express)", "Ejs", "MongoDB"] },    
-    { category: "personal", title: "My Portfolio", description: "This is my portfolio-site made with Next.js, Typescript, TailwindCSS and Email.js", link: "https://yutahamasaki.vercel.app", imageSrc: myportfolio, imageAlt: "zen-eats", detail: "/projects/portfolio", stacks: ["Next.js", "Typescript", "TailwindCSS"] }
-  ];
   const [category, setCategory] = useState('all');
 
+  const projects = Portfolio_Data;
   const handleCategoryChange = (newCategory: string) => {
     setCategory(newCategory);
   }
@@ -37,11 +33,11 @@ const Project = () => {
               return (
                 <ProjectCard
                   key={index}
+                  id={project.id}
                   category={project.category}
                   title={project.title}
                   description={project.description}
                   link={project.link}
-                  detail={project.detail}
                   imageSrc={project.imageSrc}
                   imageAlt={project.imageAlt}
                   stacks={project.stacks}
