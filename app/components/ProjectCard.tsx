@@ -27,12 +27,12 @@ const ProjectCard= ({
   
   return (
     <div
-    className="bg-white p-4 rounded-md shadow-md mb-4 m-2 min-h-96" style={{height: 'auto', width: '360px' }}>
+    className="bg-white p-4 rounded-md shadow-md mb-4 m-2 min-h-96" style={{height: 'auto', width: '400px' }}>
       {imageSrc && (
         <div className="mb-4 rounded-md overflow-hidden h-40 w-full relative">
           <Image src={imageSrc} alt={imageAlt}
           width={400}
-          height={225}
+          height={250}
           className='h-40 w-full object-cover'/>
         </div>
       )}
