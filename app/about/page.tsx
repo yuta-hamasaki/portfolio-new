@@ -1,7 +1,7 @@
 
-import Header from '../components/Header';
-import History from '../components/History';
-import About from '../components/About'
+import Header from '../../components/Header';
+import History from '../../components/History';
+import About from '../../components/About'
 
 const page = () => {
   return (

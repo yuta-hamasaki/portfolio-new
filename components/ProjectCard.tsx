@@ -38,9 +38,9 @@ const ProjectCard= ({
       )}
       <p className="rounded-full border border-sky-100 bg-sky-50 px-2 py-0.5 text-sky-300 bg-sky-500/10 w-fit">{category}</p>
       <h2 className="text-xl font-semibold text-gray-800 mb-2">{title}</h2>
-      <div className="my-2">
+      <div className="my-2 grid-cols-4 grid text-center">
         {stacks.map((stack) => (
-          <span key={id} className=" m-1  text-xs font-semibold text-gray-700 border border-green-500 rounded" style={{padding:'1px'}}>
+          <span key={id} className=" m-1 text-xs font-semibold text-gray-700 border border-green-500 rounded" style={{padding:'1px'}}>
             {stack}
           </span>
         ))}
