@@ -1,6 +1,6 @@
 import vancastrologo from '@/public/vancastro-logo.png'
 import myportfolio from '@/public/myportfolio.png'
-import howtofit from '@/public/Screenshot 2024-11-26 at 15.36.41.png'
+
 
 
 export const Portfolio_Data = [
@@ -8,7 +8,7 @@ export const Portfolio_Data = [
     category: "personal", 
     title: "Ai Word Quiz", 
     description: "Next.js, Typescript, TailwindCSS, Microcms, Stripe, Supabase, OpenAIAPIを使用した単語学習アプリです。実際に2人のユーザーに使用してもらい、フィードバックを元に改善を重ねております。ランディングページは運用しやすいようにMicroCMSを導入しました", link: "https://aiwordquiz.com/landing", 
-    imageSrc: howtofit, 
+    imageSrc: myportfolio, 
     imageAlt: "zen-eats", 
     stacks: ["Next.js", "Typescript", "TailwindCSS", "Microcms", "Stripe", "Supabase", "OpenAIAPI"] }, 
     // vancastro
