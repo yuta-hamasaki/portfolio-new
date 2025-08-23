@@ -2,7 +2,9 @@ import PhotoCard from '@/components/PhotoCard';
 import Footer from '@/components/Footer';
 
 const imageData = [
+  'https://gallary-lovat.vercel.app/vanphoto/van1.JPG',
   'https://gallary-lovat.vercel.app/vanphoto/19.jpg',
+  'https://gallary-lovat.vercel.app/vanphoto/24.jpg',
   'https://gallary-lovat.vercel.app/vanphoto/12.jpg',
   'https://gallary-lovat.vercel.app/vanphoto/13.jpg',
   'https://gallary-lovat.vercel.app/vanphoto/14.jpg',
@@ -14,10 +16,8 @@ const imageData = [
   'https://gallary-lovat.vercel.app/vanphoto/21.jpg',
   'https://gallary-lovat.vercel.app/vanphoto/22.jpg',
   'https://gallary-lovat.vercel.app/vanphoto/23.jpg',
-  'https://gallary-lovat.vercel.app/vanphoto/24.jpg',
   'https://gallary-lovat.vercel.app/vanphoto/25.jpg',
   'https://gallary-lovat.vercel.app/vanphoto/26.jpg',
-  'https://gallary-lovat.vercel.app/vanphoto/van1.JPG',
   'https://gallary-lovat.vercel.app/vanphoto/van10.jpg',
   'https://gallary-lovat.vercel.app/vanphoto/van11.jpg',
   'https://gallary-lovat.vercel.app/vanphoto/van2.JPG',
