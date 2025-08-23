@@ -33,7 +33,7 @@ export default function page() {
   return (
     <>
     <div className="w-screen h-screen p-2 flex flex-col items-center overflow-hidden">
-      <h2 className='mt-10 text-center font-bold text-3xl'>Memory In Vancouver Canada 🇨🇦</h2>
+      <h2 className='mt-10 text-center font-bold text-3xl'>Memory In Vancouver 🇨🇦</h2>
         <p className="mt-3 animate-bounce">
           ↓Click the photo!
         </p>
