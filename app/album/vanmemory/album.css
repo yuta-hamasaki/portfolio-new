@@ -36,7 +36,6 @@
 }
 
 .photocard {
-
   position:absolute;
   top:50%;
   left:50%;
@@ -48,9 +47,8 @@
 }
 
 .photocard-item {
-
-  width:320px;
-  height:480px;
+  width:290px;
+  height:440px;
   transform-origin:50% 50%;
   position:absolute;
   backface-visibility: visible;
