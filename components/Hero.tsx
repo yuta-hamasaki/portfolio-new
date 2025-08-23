@@ -62,9 +62,6 @@ const Hero = () => {
             <Link href="mailto:yh02052002@icloud.com">
               <MdOutlineMail className="p-1 text-5xl cursor-pointer" />
             </Link>
-            <Link href="https://instagram.com/yuta.h_25">
-              <FaInstagram className="p-1 text-5xl cursor-pointer" />
-            </Link>
           </div>
         </div>
       </div>
@@ -82,7 +79,7 @@ const Hero = () => {
           style={{ transition: 'opacity 0.5s' }}
         />
       </div>
-      <div className="animate-bounce absolute bottom-0 text-4xl md:text-black text-white">
+      <div className="animate-bounce absolute bottom-0 text-4xl md:text-black ">
         <Link href="#midsection">
           <HiOutlineChevronDoubleUp />
         </Link>
