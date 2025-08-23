@@ -2,6 +2,9 @@ import Link from 'next/link'
 import React from 'react';
 
 const Footer = () => {
+    const today = new Date()
+
+  const year = today.getFullYear()
   return (
   <>
     <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
@@ -9,7 +12,7 @@ const Footer = () => {
     </svg>
     <footer className=" bg-green-100 py-1 h-auto">
       <p className="text-gray-700 text-sm py-5 b-0 text-center">
-        @2024. Yuta Hamasaki
+        @{year}. Yuta Hamasaki
       </p>
     </footer>
   </>
